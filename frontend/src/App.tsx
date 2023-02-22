@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
+import Marketplace from './components/Marketplace/Marketplace';
 
 function App() {
   return (
     <>
+    <Marketplace />
     </>
   );
 }
