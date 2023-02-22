@@ -6,8 +6,13 @@ import dropItem2 from '../../assets/drop_item2.png'
 import dropItem3 from '../../assets/drop_item3.png'
 import dropItem4 from '../../assets/drop_item4.png'
 import dropItem5 from '../../assets/drop_item5.png'
+import {useNavigate} from 'react-router-dom'
 
 const Sidebar = () => {
+    const navigate = useNavigate()
+    const routeHandler = (URL:any) => {
+        navigate(URL)
+    }
   return (
     <div className="sidebar-wrapper">
         <div className="drop">
@@ -21,10 +26,10 @@ const Sidebar = () => {
             <h1 className="sidebar-title">Dashboard</h1>
             <div className="sidebar-line"></div>
             <div className="navigation">
-                <div className="nav active"><Sprite id="home"/><h1 className="nav-title">Home</h1></div>
-                <div className="nav"><Sprite id="market"/><h1 className="nav-title">Marketplace</h1></div>
-                <div className="nav"><Sprite id="settings"/><h1 className="nav-title">Settings</h1></div>
-                <div className="nav"><Sprite id="faq"/><h1 className="nav-title">FAQ</h1></div>
+                <div onClick={() => routeHandler('/')} className={window.location.pathname==='/' ? 'nav active' : 'nav'}><Sprite id="home"/><h1 className="nav-title">Home</h1></div>
+                <div onClick={() => routeHandler('/marketplace')} className={window.location.pathname==='/marketplace' ? 'nav active' : 'nav'}><Sprite id="market"/><h1 className="nav-title">Marketplace</h1></div>
+                <div onClick={() => routeHandler('/settings')} className={window.location.pathname==='/settings' ? 'nav active' : 'nav'}><Sprite id="settings"/><h1 className="nav-title">Settings</h1></div>
+                <div onClick={() => routeHandler('/faq')} className={window.location.pathname==='/faq' ? 'nav active' : 'nav'}><Sprite id="faq"/><h1 className="nav-title">FAQ</h1></div>
             </div>
             <h1 className="sidebar-title">Statistics</h1>
             <div className="sidebar-line"></div>

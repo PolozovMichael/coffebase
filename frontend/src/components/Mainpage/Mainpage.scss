@@ -2,7 +2,6 @@
     background-color: #2c2f48d4;
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +31,12 @@
         }
     }
 
+    .banner:hover {
+        transform: scale(1.02);
+    }
+
     .banner {
+        transition: all .3s ease-in-out;
         width: 626px;
         margin-top: 31px;
         height: 317px;
@@ -47,6 +51,7 @@
         justify-content: center;
         align-items: center;
         padding: 0 10px;
+        cursor: pointer;
 
         h1 {
             font-weight: 700;
@@ -54,6 +59,79 @@
             letter-spacing: 0.06em;
             color: #FFFFFF;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+
+    .community {
+        width: 100%;
+        height: calc(400px - 40px);
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        padding: 0 20px;
+
+        .community-title {
+            font-weight: 700;
+            font-size: 26px;
+            letter-spacing: 0.025em;
+            color: #FFFFFF;
+            align-self: flex-start;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .community-row {
+            display: flex;
+            gap: 25px;
+
+            .community-card:hover {
+                transform: scale(1.02);
+            }
+
+            .community-card:nth-child(2) {
+                background: url('../../assets/community_card_two.jfif');
+            }
+
+            .community-card {
+                transition: all .3s ease-in-out;
+                width: 347px;
+                height: 200px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 5px 6px rgba(0, 0, 0, 0.25);
+                border-radius: 50px;
+                background: url('../../assets/community_card_one.jfif');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                display: flex;
+
+                .community-overlay {
+                    background: conic-gradient(from 180deg at 50.06% -12.65%, rgba(141, 44, 141, 0.77) 0deg, rgba(18, 15, 144, 0.77) 145.02deg, rgba(18, 15, 145, 0.77) 287.57deg, rgba(141, 44, 141, 0.77) 360deg);
+                    width: 100%;
+                    height: 40%;
+                    align-self: flex-end;
+                    border-radius: 0 0 50px 50px;
+                    padding: 0 10px 0 20px;
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 20px;
+                        letter-spacing: 0.005em;
+                        color: #FFFFFF;
+                    }
+
+                    h3 {
+                        margin-top: 5px;
+                        font-weight: 700;
+                        font-size: 12px;
+                        letter-spacing: 0.005em;
+                        color: #DCDCDC;
+                    }
+                }
+            }
         }
     }
 }
