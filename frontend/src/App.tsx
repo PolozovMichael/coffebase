@@ -2,7 +2,7 @@ import './App.scss'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="wrapper">App</div>
   )
 }
 
