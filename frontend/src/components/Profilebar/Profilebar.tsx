@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Profilebar = () => {
   return (
-    <div></div>
+    <div>ProfileBar</div>
   )
 }
 
