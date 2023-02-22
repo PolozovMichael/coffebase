@@ -1,12 +1,9 @@
-import React from 'react';
-import Marketplace from './components/Marketplace/Marketplace';
 
-function App() {
+
+const App = () => {
   return (
-    <>
-    <Marketplace />
-    </>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
