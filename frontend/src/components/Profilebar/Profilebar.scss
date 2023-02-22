@@ -1,0 +1,115 @@
+.profilebar {
+    height: 100%;
+    background: rgba(44, 47, 72, 0.75);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    
+    .avatar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .profile-img {
+        width: 130px;
+        height: 151px;
+        margin-bottom: 35px;
+      }
+
+      img:nth-child(2), 
+      img:nth-child(3) {
+        position: absolute;
+        top: -10px;
+        animation-name: anim;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite
+      } 
+      img:nth-child(3) {
+        top: -20px;
+      }
+    }
+
+    @keyframes anim {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+  
+    .profilebar__name {
+      margin-bottom: 35px;
+  
+      h1 {
+        color: #fff;
+        font-size: 20px;
+      }
+  
+      h2 {
+        color: rgba(255, 255, 255, 0.59);
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  
+    .profilebar__members {
+      overflow-y: scroll;
+      height: 530px;
+      width: 100%;
+      padding: 0 40px;
+      .new__members-text {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 86px;
+        h1 {
+          font-weight: 700;
+          font-size: 20px;
+          letter-spacing: 0.015em;
+          color: #fff;
+        }
+        h3 {
+          font-weight: 400;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.59);
+          cursor: pointer;
+        }
+      }
+      .members-block:hover {
+        transform: scale(1.1);
+      }
+      .members-block {
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: rgba(155, 155, 255, 0.3);
+        background-blend-mode: overlay;
+        border-radius: 5px;
+        margin-top: 8px;
+        padding: 8px 100px 8px 8px;
+        .block2 {
+          h1 {
+            font-weight: 400;
+            font-size: 15px;
+            color: #fff;
+          }
+          h3 {
+            font-weight: 400;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.25);
+          }
+        }
+      }
+    }
+  }
+  

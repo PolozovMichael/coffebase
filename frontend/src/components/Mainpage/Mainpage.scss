@@ -1,0 +1,59 @@
+.mainpage-wrapper {
+    background-color: #2c2f48d4;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+
+    .searchbar {
+        width: 626px;
+        height: 50px;
+        padding: 12px;
+        background: #2C2F48;
+        border-radius: 10px;
+
+        input[type=text]:focus {
+            outline: none;
+        }
+
+        input[type=text]::placeholder {
+            color: #ffffffa8;
+        }
+
+        input[type=text] {
+            width: 100%;
+            border: none;
+            background: transparent;
+            height: 100%;
+            color: #ffffffa8;
+        }
+    }
+
+    .banner {
+        width: 626px;
+        margin-top: 31px;
+        height: 317px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 5px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        background: url('../../assets/mainpage_banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 38px;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
