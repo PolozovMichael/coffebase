@@ -2,9 +2,7 @@ import React from 'react'
 
 const Marketplace = () => {
   return (
-    <>
-    <div></div>
-    </>
+    <div>Marketplace</div>
   )
 }
 
