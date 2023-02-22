@@ -8,6 +8,10 @@ const App = () => {
     <div className="wrapper">
         <Sidebar />
     </div>
+    <div className="wrapper">
+      <Marketplace />
+      <Profilebar />
+    </div>
   )
 }
 
