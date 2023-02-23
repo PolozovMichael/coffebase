@@ -8,8 +8,9 @@ const App = () => {
   return (
     <div className="wrapper">
       <Sidebar />
-      <Mainpage />
+      <Marketplace />
       <Profilebar />
+      
     </div>
   )
 }
