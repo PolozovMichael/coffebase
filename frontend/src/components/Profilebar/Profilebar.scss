@@ -16,6 +16,11 @@
         width: 130px;
         height: 151px;
         margin-bottom: 35px;
+        cursor: pointer !important;
+        transition: all .3s ease-in-out;
+      }
+      .profile-img:hover {
+        transform: scale(1.1);
       }
 
       img:nth-child(2), 

@@ -3,6 +3,7 @@ import Marketplace from './components/Marketplace/Marketplace'
 import Profilebar from './components/Profilebar/Profilebar'
 import Sidebar from './components/Sidebar/Sidebar'
 import Mainpage from './components/Mainpage/Mainpage'
+import Settings from './components/Settings/Settings'
 import {Route, Routes} from 'react-router-dom'
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="/settings" element={
             <>
               <Sidebar />
-              settings
+              <Settings />
               <Profilebar />
             </>
         }/>

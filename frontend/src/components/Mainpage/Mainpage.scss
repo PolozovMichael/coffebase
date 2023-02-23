@@ -22,6 +22,15 @@
             color: #ffffffa8;
         }
 
+        input[type=submit] {
+            color: white;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF !important;
+            border: none !important;
+            background: linear-gradient(90.7deg, rgba(135, 68, 174, 0.553) -59.08%, rgba(98, 223, 255, 0.35) 112.63%);
+        }
+
         input[type=text] {
             width: 100%;
             border: none;
@@ -107,6 +116,7 @@
                 background-size: cover;
                 background-position: center center;
                 display: flex;
+                cursor: pointer;
 
                 .community-overlay {
                     background: conic-gradient(from 180deg at 50.06% -12.65%, rgba(141, 44, 141, 0.77) 0deg, rgba(18, 15, 144, 0.77) 145.02deg, rgba(18, 15, 145, 0.77) 287.57deg, rgba(141, 44, 141, 0.77) 360deg);
