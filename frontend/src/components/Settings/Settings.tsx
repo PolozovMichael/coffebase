@@ -4,7 +4,7 @@ import './Settings.scss'
 const Settings = () => {
   return (
     <div className="settings-wrapper">
-        <h1 className="settings-title">User Profile Settings</h1>
+        <h1 className="settings-title">User Profile Registration</h1>
         <div>
             <div className="user-info">
                 <img src={users[5]} alt="" />
@@ -12,14 +12,16 @@ const Settings = () => {
             <div className="submission-form">
                 <form>
                     <label htmlFor="name">Name</label>
-                    <input type="text" />
+                    <input required type="text" />
                     <label htmlFor="name">Bio</label>
-                    <input type="text" />
+                    <input required type="text" />
                     <label htmlFor="name">Email</label>
-                    <input type="text" />
+                    <input required type="email" />
+                    <label htmlFor="name">Password</label>
+                    <input required type="password" />
                     <div>
-                    <input type="submit" />
-                    <input type="submit" />
+                        <div>Update profile</div>
+                        <div>Cancel</div>
                     </div>
                 </form>
             </div>

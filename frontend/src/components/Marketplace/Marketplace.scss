@@ -1,0 +1,52 @@
+.marketplace-hook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 90%;
+      height: 250px;
+      margin-top: 30px;
+    }
+  
+    .coffees {
+      display: flex;
+      gap: 17px;
+      margin-top: 50px;
+      .coffee {
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 208px;
+        width: 180px;
+        position: relative;
+        flex-direction: column;
+        padding: 40px 10px;
+        background: rgba(44, 47, 72, 1);
+        .coffee-img {
+          width: 52px;
+          height: 72px;
+          margin-top: 40px;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          top: 0;
+          width: 104px;
+          height: 132px;
+          margin-top: 11px;
+        }
+        h3 {
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .coffee:hover {
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
